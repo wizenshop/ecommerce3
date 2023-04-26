@@ -28,7 +28,12 @@ function getcurrentMonth() {
 }
 
 export function DesktopMenu() {
-  const [location, setLocation] = useState(null);
+  
+  const currentMonth = getcurrentMonth();
+  /**
+ * 
+ * 
+ * const [location, setLocation] = useState(null);
 
   useEffect(() => {
     getGeolocation()
@@ -39,11 +44,6 @@ export function DesktopMenu() {
         console.log(error);
       });
   }, []);
-  const currentMonth = getcurrentMonth();
-  /**
- * 
- * 
- * 
  * {location && (
           <NavigationMenu.Item>
             <Style.NavigationMenuLink href="https://github.com/radix-ui">
