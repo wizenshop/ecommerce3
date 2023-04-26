@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Suspense } from "react";
+import Geolocation from "@/components/Geolocation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,8 @@ export default async function Home() {
   return (
     <>
       <Suspense fallback={<p>carregando produtos...</p>}>
-      {JSON.stringify(data)}
+      
+      <Geolocation/>
       </Suspense>
 
       <p className={inter.className}></p>
