@@ -4,6 +4,7 @@ export interface IGeoLocation {
   state: string;
 }
 
+
 export async function getGeolocation(): Promise<IGeoLocation> {
   return new Promise((resolve, reject) => {
     if (navigator.geolocation) {
