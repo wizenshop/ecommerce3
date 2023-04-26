@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/colors": "^0.1.8",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-menubar": "^1.0.2",
     "@radix-ui/react-navigation-menu": "^1.1.2",
     "@radix-ui/react-popover": "^1.0.5",
+    "@stitches/core": "^1.2.8",
     "@stitches/react": "^1.2.8",
     "@types/node": "18.16.0",
     "@types/react": "18.2.0",

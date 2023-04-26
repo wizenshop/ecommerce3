@@ -5,13 +5,8 @@ import { BottomNavigation } from "./BottomNavigation";
 
 import { useMediaQuery } from "react-responsive";
 
-
-export function Header() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-
-  return (
-    <>
-      {isMobile ? (
+/**
+ *  {isMobile ? (
         <>
           <MobileMenu />
           <BottomNavigation />
@@ -19,6 +14,13 @@ export function Header() {
       ) : (
         <DesktopMenu />
       )}
+ */
+export function Header() {
+ // const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  return (
+    <>
+     <DesktopMenu />
     </>
   );
 }
